@@ -1,0 +1,20 @@
+version: '3.9'
+services:
+
+# Backend docker-compose  
+  spring-boot-backend:
+    container_name: "spring-boot-backend"
+    restart: always
+    image: spring-boot-backend:ver1.0
+    ports:
+      - "8080:8080"
+    links:
+      - angular-frontend
+  
+# Frontend docker-compose    
+  angular-frontend:
+    container_name: "angular-frontend"
+    image: angular-frontend:ver2.0
+    ports:
+      - "4200:80"
+          
