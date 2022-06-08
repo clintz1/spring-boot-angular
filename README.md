@@ -1,3 +1,14 @@
+## My Spring Boot Angular Docker Project
+
+To run this project using container, do the following
+
+1. Clone this project to a your PC
+2. Run the command docker-compose up --build (after first time you can ignore the build flag subsequently)
+3. Go to your browser and type localhost:4200 to run the application
+4. To close the application, run docker-compose down in a terminal
+
+
+# Orinal README FILES
 ## Spring Boot Angular
 
 This project contains a Spring Boot API and Angular front end. 
