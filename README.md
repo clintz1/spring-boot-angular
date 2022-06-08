@@ -1,10 +1,31 @@
 ## My Spring Boot Angular Docker Project
 
-To run this project using container, do the following
+1. To build the frontend angular docker image,navigate to /usr/main/js/application and run 
+     docker build -t angular-frontend:ver2.0 .
+
+   To run the frontend docker container type
+   
+      docker run -p 4200:80  angular-frontend:ver1.0
+
+2. To build the backend spring-boot docker image,navigate to /usr/main/js/application and run 
+     docker build -t spring-boot-backend:ver1.0 .
+
+   To run the backend docker container type
+   
+      docker run -p 8080:8080  spring-boot-backend:ver1.0
+      
+3. Go to your browser and type localhost:4200 to run the application
+
+
+
+To run this project using docker-compose, do the following
 
 1. Clone this project to a your PC
+
 2. Run the command docker-compose up --build (after first time you can ignore the build flag subsequently)
+
 3. Go to your browser and type localhost:4200 to run the application
+
 4. To close the application, run docker-compose down in a terminal
 
 
